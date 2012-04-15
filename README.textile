@@ -6,7 +6,8 @@ bc. gem install pandoc-ruby
 
 Then build and install this jekyll: gem build jekyll.gemspec
 
-bc. gem install -l jekyll-*.*.*.gem
+bc. gem build jekyll.gemspec
+gem install -l jekyll-*.*.*.gem
 
 After that, you can set in your _config.yml like this:
 
