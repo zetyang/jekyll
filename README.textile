@@ -1,24 +1,19 @@
-This is my fork of Jekyll, it just add the support for pandoc as the markdown
-renderer of jekyll.
+This is my fork of Jekyll, it just add the support for pandoc as the markdown renderer of jekyll.
 
-To install, make sure you have the `pandoc-ruby` gem in your computer. If not,
-do like:
-    gem install pandoc-ruby
+To install, make sure you have the `pandoc-ruby` gem in your computer. If not, do like:
+bc. gem install pandoc-ruby
 
-Then build and install this jekyll:
-    gem build jekyll.gemspec
-    gem install -l jekyll-*.*.*.gem
+Then build and install this jekyll: gem build jekyll.gemspec
+bc. gem install -l jekyll-*.*.*.gem
 
 After that, you can set in your _config.yml like this:
-    markdown: pandoc
-    pandoc:
-        extensions: [mathjax, standalone]
+bc. markdown: pandoc
+pandoc:
+    extensions: [mathjax, standalone]
 
 Then you have the jekyll equiped with pandoc, enjoy!
 
-Last thing to note is that you can't use pandoc in GithubPages, so you have to
-generate all the site files locally and then push them to your github
-pages repo.
+Last thing to note is that you can't use pandoc in GithubPages, so you have to generate all the site files locally and then push them to your github pages repo.
 
 
 h1. Jekyll
